@@ -1,10 +1,10 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-
 import { Img, List, Text } from "components";
 
-const ReservationsPage = () => {
+
+const Test = () => {
   const navigate = useNavigate();
 
   return (
@@ -15,7 +15,8 @@ const ReservationsPage = () => {
             className="md:text-5xl text-[80px] text-white-A700 underline"
             size="txtJacquesFrancoisRegular80"
           >
-            Reservations
+          Reservations
+            
           </Text>
           <div className="font-montaga sm:h-[1665px] h-[684px] relative w-full">
             <div className="flex flex-col gap-[49px] h-full items-center justify-start mt-[45px] mx-auto w-[88%]">
@@ -260,4 +261,4 @@ const ReservationsPage = () => {
   );
 };
 
-export default ReservationsPage;
+export default Test;

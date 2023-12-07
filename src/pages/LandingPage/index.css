@@ -1,0 +1,89 @@
+.landing-page{
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.landing-page-image{
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* --tw-bg-opacity: 1; */
+    
+	display: flex;
+	flex-direction: column;
+	font-family: Inknut Antiqua;
+
+	gap: 500px;
+	
+	width: 100%;
+	height: 100%;
+	
+	justify-content: flex-start;
+
+	margin-left: auto;
+    margin-right: auto;
+
+	padding: 2.5rem 40px;
+}
+
+.landing-page-gap{
+	display: flex;
+	flex-direction: column;
+	height: 25px;
+	color: white;
+}
+
+/*
+.landing-page-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* margin-bottom: 219px;
+	margin-left: 165px;
+	margin-right: 0.5rem/* 8px */; 
+	/* padding-right: 156px;  */
+
+	/* height: 100%; */
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+    .sm\:gap-10 {
+        gap: 2.5rem/* 40px */;
+    }
+
+	.sm\:px-5 {
+        padding-left: 1.25rem/* 20px */;
+        padding-right: 1.25rem/* 20px */;
+    }
+
+	.md\:ml-\[0\] {
+        margin-left: 0;
+    }
+
+	.sm\:pr-5 {
+        padding-right: 1.25rem/* 20px */;
+    }
+	
+}
+
+
+@media (max-width: 1050px) {
+    .md\:gap-10 {
+        gap: 2.5rem/* 40px */;
+    }
+
+	.md\:px-5 {
+        padding-left: 1.25rem/* 20px */;
+        padding-right: 1.25rem/* 20px */;
+    }
+}

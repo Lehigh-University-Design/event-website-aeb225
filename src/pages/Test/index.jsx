@@ -3,30 +3,30 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Img, List, Text } from "components";
 
+import "./index.css";
+import Navbar from "components/Navbar";
 
-const Test = () => {
+const ReservationsPage = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="bg-blue_gray-900 flex sm:flex-col md:flex-col flex-row font-jacquesfrancois gap-[59px] items-center mx-auto md:pl-10 sm:pl-5 pl-[94px] w-full">
-        <div className="flex flex-col gap-[57px] items-center justify-start w-[43%] md:w-full">
-          <Text
-            className="md:text-5xl text-[80px] text-white-A700 underline"
-            size="txtJacquesFrancoisRegular80"
-          >
-          Reservations
+    <Navbar/>
+      <div className="reservations-page">
+        <div className="info-left">
+          <div className="Reservations">Reservations</div>
             
-          </Text>
-          <div className="font-montaga sm:h-[1665px] h-[684px] relative w-full">
-            <div className="flex flex-col gap-[49px] h-full items-center justify-start mt-[45px] mx-auto w-[88%]">
-              <div className="flex flex-col items-center justify-start w-full">
-                <Text
+         
+          <div className="grand-opening-box">
+            <div className="grand-opening-box-info">
+              <div className="header">
+                {/* <Text
                   className="sm:text-4xl md:text-[38px] text-[40px] text-center text-white-A700 w-[83%] sm:w-full"
                   size="txtInknutAntiquaRegular40"
                 >
                   GRAND OPENING
-                </Text>
+                </Text> */}
+                <div className="grand-opening">GRAND OPENING</div>
                 <Text
                   className="sm:text-[40px] md:text-[46px] text-[50px] text-center text-white-A700"
                   size="txtInknutAntiquaRegular50"
@@ -228,7 +228,7 @@ const Test = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute border-[3px] border-solid border-white-A700 flex flex-col font-metal h-full inset-[0] items-center justify-center m-auto p-[30px] sm:px-5 w-full">
+            {/* <div className="absolute border-[3px] border-solid border-white-A700 flex flex-col font-metal h-full inset-[0] items-center justify-center m-auto p-[30px] sm:px-5 w-full">
               <div
                 className="common-pointer h-[41px] md:h-[624px] mt-[583px] relative w-1/4"
                 onClick={() => navigate("/menu")}
@@ -240,20 +240,15 @@ const Test = () => {
                 >
                   Book Now
                 </Text>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
-        <div className="h-[982px] relative w-[54%] md:w-full">
+        <div className="info-right">
           <Img
             className="h-[982px] m-auto object-cover w-full"
             src="images/img_marialauragion.png"
             alt="marialauragion"
-          />
-          <Img
-            className="absolute h-7 right-[6%] top-[4%]"
-            src="images/img_navbar.svg"
-            alt="navbar"
           />
         </div>
       </div>
@@ -261,4 +256,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default ReservationsPage;

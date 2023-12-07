@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Img, Text } from "components";
+import Navbar from "components/Navbar";
 
 const YoureInvitedPage = () => {
   const navigate = useNavigate();

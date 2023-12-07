@@ -1,13 +1,14 @@
 import React from "react";
 
 import { Img, Text } from "components";
+import Navbar from "components/Navbar";
 
 const FAQsPage = () => {
   return (
     <>
+    <Navbar/>
       <div className="bg-blue_gray-900 flex flex-col font-jacquesfrancois justify-start mx-auto p-10 sm:px-5 w-full">
         <div className="flex flex-col items-end md:ml-[0] ml-[119px] mr-2 sm:pl-5 pl-[1241px] md:px-5 w-[92%] md:w-full">
-          <Img className="h-7" src="images/img_navbar.svg" alt="navbar" />
         </div>
         <Text
           className="md:ml-[0] ml-[119px] md:text-5xl text-[80px] text-white-A700"

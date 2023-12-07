@@ -1,24 +1,125 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
 
+import "./index.css";
+import Navbar from "components/Navbar";
+
 const LandingPagePage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <div
-        className="bg-cover bg-no-repeat bg-yellow-50 flex flex-col font-inknutantiqua sm:gap-10 md:gap-10 gap-[503px] h-[982px] justify-start mx-auto p-10 sm:px-5 w-full"
-        style={{ backgroundImage: "url('images/img_landingpage.png')" }}
-      >
-        <div className="flex flex-col items-end md:ml-[0] ml-[165px] mr-2 sm:pl-5 pl-[1195px] md:px-5 w-[88%] md:w-full">
-          <Img className="h-7" src="images/img_navbar.svg" alt="navbar" />
-        </div>
-        <div className="flex flex-col items-center mb-[219px] md:ml-[0] ml-[165px] mr-2 sm:pr-5 pr-[156px] md:px-5">
+    <div className="landing-page">
+      <Navbar/>
+      {/* <div className="landing-page-image">
+        <img src="images/img_landingpage.png"/>
+      </div> */}
+      <div className="landing-page-image" style={{ backgroundImage: "url('images/img_landingpage.png')" }} >
+      <div className="landing-page-gap"></div>
+        <div className="landing-page-title">
           <Text
             className="md:text-5xl text-[90px] text-center text-white-A700"
             size="txtInknutAntiquaRegular90"
           >
             La Piazza Sul Tetto
           </Text>
+        </div>
+      </div>
+      </div>
+
+      <div className="landing-page-gap"></div>
+
+
+
+
+      <div className="bg-blue_gray-900 flex sm:flex-col md:flex-col flex-row font-jacquesfrancois gap-[59px] items-start mx-auto md:pl-10 sm:pl-5 pl-[94px] w-full">
+        <div className="flex flex-col md:gap-10 gap-16 items-center justify-start md:mt-0 mt-[58px] w-[43%] md:w-full">
+          <Text
+            className="md:text-5xl text-[80px] text-white-A700"
+            size="txtJacquesFrancoisRegular80"
+          >
+            You’re Invited
+          </Text>
+          <div className="border-[3px] border-solid border-white-A700 flex flex-col items-center justify-end p-[15px] w-full">
+            <Text
+              className="mt-[29px] sm:text-4xl md:text-[38px] text-[40px] text-center text-white-A700 w-[77%] sm:w-full"
+              size="txtInknutAntiquaRegular40"
+            >
+              GRAND OPENING
+            </Text>
+            <Text
+              className="sm:text-[40px] md:text-[46px] text-[50px] text-center text-white-A700"
+              size="txtInknutAntiquaRegular50"
+            >
+              La Piazza Sul Tetto
+            </Text>
+            <Text
+              className="mt-0.5 sm:text-[21px] md:text-[23px] text-[25px] text-center text-white-A700"
+              size="txtMontaguSlabRegular25"
+            >
+              Tuesday, October 17th, 2023
+            </Text>
+            <Text
+              className="mt-[25px] text-center text-white-A700 text-xl w-[74%] sm:w-full"
+              size="txtMontagaRegular20"
+            >
+              <>
+                Discover the Upper West Side&#39;s floating oasis. NYC&#39;s
+                newest Italian rooftop garden restaurant with a breathtaking
+                view of Central Park.
+              </>
+            </Text>
+            <Text
+              className="mt-[31px] text-center text-white-A700 text-xl"
+              size="txtMontagaRegular20"
+            >
+              <>
+                Savor the tranquility of <br />
+                our rooftop escape.
+              </>
+            </Text>
+            <div
+              className="common-pointer font-metal md:h-14 h-[41px] mt-[15px] relative w-[24%]"
+              onClick={() => navigate("/reservations")}
+            >
+              <div className="absolute bg-indigo-200 h-[39px] inset-[0] justify-center m-auto rounded-[10px] w-full"></div>
+              <Text
+                className="absolute h-full inset-[0] justify-center m-auto sm:text-[21px] md:text-[23px] text-[25px] text-center text-white-A700 w-max"
+                size="txtMetalRegular25"
+              >
+                Reservations
+              </Text>
+            </div>
+            <Text
+              className="mt-[29px] sm:text-4xl md:text-[38px] text-[40px] text-center text-white-A700"
+              size="txtMarkaziTextRegular40"
+            >
+              <>
+                327 Elmwood Avenue,
+                <br />
+                Manhattan, NY 10023
+              </>
+            </Text>
+            <Text
+              className="text-center text-white-A700 text-xl"
+              size="txtMarkaziTextRegular20"
+            >
+              +1 (212)-555-8181
+            </Text>
+          </div>
+        </div>
+        <div className="h-[1095px] md:h-[982px] pb-[113px] relative w-[54%] md:w-full">
+          <Img
+            className="h-[982px] mx-auto object-cover w-full"
+            src="images/img_restaurantinterior.png"
+            alt="restaurantinter"
+          />
+          <Img
+            className="absolute h-7 right-[6%] top-[4%]"
+            src="images/img_navbar.svg"
+            alt="navbar"
+          />
         </div>
       </div>
     </>

@@ -1,10 +1,12 @@
 import React from "react";
 
 import { Img, Text } from "components";
+import Navbar from "components/Navbar";
 
 const VisualmenuPage = () => {
   return (
     <>
+    <Navbar/>
       <div className="bg-blue_gray-900 flex flex-col font-jacquesfrancois items-end justify-start mx-auto p-10 sm:px-5 w-full">
         <div className="flex flex-col md:gap-10 gap-[89px] justify-start mb-11 mr-2 md:px-5 w-[92%] md:w-full">
           <div className="flex sm:flex-col flex-row md:gap-10 items-start justify-between w-full">
@@ -14,7 +16,6 @@ const VisualmenuPage = () => {
             >
               Visual Menu
             </Text>
-            <Img className="h-7" src="images/img_navbar.svg" alt="navbar" />
           </div>
           <div className="md:gap-5 gap-[140px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 min-h-[auto] md:ml-[0] ml-[82px] w-[79%]">
             <Img

@@ -2,6 +2,7 @@ import React from "react";
 
 import { Img, Text } from "components";
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 
 const FAQsPage = () => {
   return (
@@ -218,6 +219,8 @@ const FAQsPage = () => {
       </div>
       </div>
       </div>
+
+      <Footer/>
     
 
 

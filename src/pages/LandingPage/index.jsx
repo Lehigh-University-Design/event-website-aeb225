@@ -4,6 +4,7 @@ import { Img, Text } from "components";
 
 import "./index.css";
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 
 const LandingPagePage = () => {
   const navigate = useNavigate();
@@ -122,6 +123,7 @@ const LandingPagePage = () => {
           />
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

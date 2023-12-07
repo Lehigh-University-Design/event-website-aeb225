@@ -2,6 +2,7 @@ import React from "react";
 
 import { Img, Text } from "components";
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 
 const MenuPage = () => {
   return (
@@ -146,6 +147,7 @@ const MenuPage = () => {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

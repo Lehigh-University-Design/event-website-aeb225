@@ -13,7 +13,7 @@ const Test = () => {
     <>
       <Navbar/>
 
-      <div className="bg-blue_gray-900 flex sm:flex-col md:flex-col flex-row font-jacquesfrancois gap-[59px] items-start mx-auto md:pl-10 sm:pl-5 pl-[94px] w-full">
+      <div className="bg-blue_gray-900 flex sm:flex-col md:flex-col flex-row font-jacquesfrancois gap-[59px] items-start mx-auto md:pl-10 sm:pl-5 pl-[94px] w-full h-full">
         <div className="flex flex-col md:gap-10 gap-16 items-center justify-start md:mt-0 mt-[58px] w-[43%] md:w-full">
           <Text
             className="md:text-5xl text-[80px] text-white-A700 underline"

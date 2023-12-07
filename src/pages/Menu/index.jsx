@@ -8,19 +8,19 @@ const MenuPage = () => {
   return (
     <>
     <Navbar/>
-    <div className="bg-gray-900 flex flex-col font-jacquesfrancois items-center justify-start mx-auto p-10 sm:px-5 w-full">
+    <div className="bg-blue_gray-900 flex flex-col font-jacquesfrancois items-center justify-start mx-auto p-10 sm:px-5 w-full h-full">
   <div className="flex flex-col md:gap-10 gap-[68px] justify-start max-w-[1364px] mb-[107px] mx-auto md:px-5 w-full">
     <div className="flex flex-row md:gap-10 items-start justify-between md:ml-[0] ml-[59px] w-[96%] md:w-full">
       <Text
         className="mt-[19px] md:text-5xl text-[80px] text-white-A700"
         size="txtJacquesFrancoisRegular80"
       >
-        Menu
+        Menu 
       </Text>
     </div>
 
 
-    <div className="flex md:flex-col flex-row gap-[37px] justify-between mx-auto w-[97%] md:w-full">
+    <div className="flex md:flex-col flex-row gap-[37px] justify-between mx-auto w-[97%] md:w-full bg-gray-900">
       <div className="md:w-[32%] md:h-[582px] h-[591px] relative w-full border-[3px] border-solid border-white-A700 flex flex-col items-center justify-center">
           <Text className="sm:text-4xl md:text-[38px] text-[40px] text-center text-white-A700 w-full" size="txtInknutAntiquaRegular40">   
             Appetizers

@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="navbar">
      
       <div className="icon-home"> 
-          <button onClick={() => navigate("/")}>La Piazza Sul Tetto</button> 
+          <button onClick={() => navigate("/landingpage")}>La Piazza Sul Tetto</button> 
       </div>
 
 

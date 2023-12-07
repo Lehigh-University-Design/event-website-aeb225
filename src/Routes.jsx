@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
-const Test = React.lazy(() => import("pages/Test"));
 const FAQs = React.lazy(() => import("pages/FAQs"));
 const Visualmenu = React.lazy(() => import("pages/Visualmenu"));
 const Menu = React.lazy(() => import("pages/Menu"));
@@ -22,7 +21,6 @@ const ProjectRoutes = () => {
           <Route path="/menu" element={<Menu />} />
           <Route path="/visualmenu" element={<Visualmenu />} />
           <Route path="/faqs" element={<FAQs />} />
-          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
     </React.Suspense>

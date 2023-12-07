@@ -6,7 +6,7 @@ const Home = () => {
       <h1>Homepage</h1>
       <ul>
         <li>
-          <Link to="/landingpage">LandingPage</Link>
+          <Link to="/landingpage">LandingPage (Start Here)</Link>
         </li>
         <li>
           <Link to="/youreinvited">YoureInvited</Link>
@@ -22,9 +22,6 @@ const Home = () => {
         </li>
         <li>
           <Link to="/faqs">FAQs</Link>
-        </li>
-        <li>
-          <Link to="/Test">Test</Link>
         </li>
       </ul>
     </div>
